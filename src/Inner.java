@@ -1,6 +1,6 @@
 
 
-class Outer {
+class MemberInner {
     int i=10;
     void m1()
     {
@@ -17,10 +17,10 @@ class Outer {
 }
 class T{
     public static void main(String[] args) {
-        Outer o=new Outer();
+        MemberInner o=new MemberInner();
         System.out.println(o.i);
         o.m1();
-        Outer.Inner ref=new Outer().new Inner();
+        MemberInner.Inner ref=new MemberInner().new Inner();
         ref.m2();
     }
 
